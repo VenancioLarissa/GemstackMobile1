@@ -1,0 +1,5 @@
+[caps]
+platformName = "Android"
+deviceName = "Pixel 2 API 28"
+automationName = "uiautomator2"
+app = "/Users/larivenancio/Bootcamp/Spotlab/mobile/spotlab.apk"
