@@ -18,11 +18,11 @@ pipeline {
       stage('Test') {
           steps {
               echo 'Executando testes'
-              sh 'rspec --format RspecJunitFormatter --out rspec.xml'    
+              sh 'cucumber -p ci'    
           }
           post {
               always {
-                  junit 'rspec.xml'
+                  sh 'relatorio'
               }
           }
       }
